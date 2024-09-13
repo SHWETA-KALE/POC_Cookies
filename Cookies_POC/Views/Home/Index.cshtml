@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Set Preferred Language";
+}
+
+<h2>Select Your Preferred Language</h2>
+
+<form action="@Url.Action("SetLanguage", "Home")" method="post">
+    <select name="language">
+        <option value="English">English</option>
+        <option value="Spanish">Spanish</option>
+        <option value="French">French</option>
+    </select>
+    <button type="submit">Save Language</button>
+</form>
+
+<a href="@Url.Action("GetLanguage", "Home")">Get Preferred Language</a> |
